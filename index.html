@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JustDo v1.0</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1 class="title">JustDo</h1>
+          <h3 class="slogan">Simple Tasks. Clear Mind.</h3>
+        </div>
+        <div class="calendar">
+          <div class="calendar-header">
+            <button id="prev" class="calendbtn"><</button>
+            <p class="month">Май</p>
+            <button id="next" class="calendbtn">></button>
+          </div>
+          <div class="day-names">
+            <div class="day-name">MON</div>
+            <div class="day-name">TUE</div>
+            <div class="day-name">WED</div>
+            <div class="day-name">THU</div>
+            <div class="day-name">FRI</div>
+            <div class="day-name">SAT</div>
+            <div class="day-name">SUN</div>
+          </div>
+          <div class="calendar-grid"></div>
+        </div>
+      </div>
+    </header>
+    <div class="app-layout">
+      <aside>
+        <p class="total-tasks">Total tasks: 0</p>
+        <p class="completed-tasks">Completed tasks: 0</p>
+        <p class="remaining-tasks">Remaining tasks: 0</p>
+        <br>
+        <p class="remaining-today">Remaining today: 0</p>
+      </aside>
+      <main>
+        <div class="mainheader">
+          <div class="headertext">Add a task:</div>
+          <div class="inputarea"><input
+            type="text"
+            class="task-input"
+            placeholder = "Enter a task..."
+          />
+          <button class="add-btn">ADD</button></div></br>
+        </div>
+        <div class="task-list"></div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
